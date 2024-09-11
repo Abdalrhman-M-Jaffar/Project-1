@@ -3,13 +3,16 @@ let supportRadio = document.getElementById('Support');
 let label1 = document.getElementById('General-Enquiry');
 let label2 = document.getElementById('Support-Request');
 
-
 function styleCheck1(){
     if(genralRadio.checked){
         label1.style.backgroundColor = '#e0f1e7';
         label2.style.backgroundColor = 'white';
         label1.style.border = '1px solid #0c7d69';
         label2.style.border = '1px solid #666';
+        queryError.style.cssText = `
+            margin-bottom: -22px;
+            opacity: 0;
+        `;
     }
 }
 
@@ -19,6 +22,10 @@ function styleCheck2(){
         label1.style.backgroundColor = 'white';
         label2.style.border = '1px solid #0c7d69';
         label1.style.border = '1px solid #666';
+        queryError.style.cssText = `
+            margin-bottom: -22px;
+            opacity: 0;
+        `;
     }
 }
 
@@ -44,7 +51,7 @@ let messageSent = document.getElementById('message-sent-style');
 function removeMsg(){
     setTimeout(function(){
         messageSent.style.cssText = `transform: translateY(-150px);`
-    },3000)
+    },5000)
 }
 
 function emptyEveryThing(){
@@ -68,6 +75,7 @@ function emptyEveryThing(){
 }
 
 function submit(){
+    
     if(firstNameBox.value.length == 0){
         firstNameBox.style.cssText = `border: 1px solid #c76f7d`;
         firstNameError.style.cssText = `
@@ -172,3 +180,47 @@ function submit(){
     
 }
 
+function firstLastName(){
+    if(firstNameBox.value.length > 0){
+        firstNameBox.style.cssText = `border: 1px solid #666`;
+        firstNameError.style.cssText = `
+            margin-bottom: -22px;
+            opacity: 0;
+        `;
+    }
+
+    if(lastNameBox.value.length > 0){
+        lastNameBox.style.cssText = `border: 1px solid #666`;
+        lastNameError.style.cssText = `
+            margin-bottom: -22px;
+            opacity: 0;
+        `;
+    }
+}
+
+function emailMsg(){
+    if(emailBox.value.length > 0){
+        emailBox.style.cssText = `border: 1px solid #666`;
+        emailError.style.cssText = `
+            margin-bottom: -22px;
+            opacity: 0;
+        `;
+    }
+
+    if(msgBox.value.length > 0){
+        msgBox.style.cssText = `border: 1px solid #666`;
+        msgError.style.cssText = `
+            margin-bottom: -22px;
+            opacity: 0;
+        `;
+    }
+}
+
+function conset(){
+    if(consetCheckBox.checked){
+        consetError.style.cssText = `
+        margin-bottom: -22px;
+        opacity: 0;
+    `;
+    }
+}

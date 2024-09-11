@@ -23,7 +23,7 @@
               <div>First Name</div>
               <div>*</div>
             </div>
-            <input type="text" class="name-text-box" id="first-name-text-box">
+            <input type="text" class="name-text-box" id="first-name-text-box" onkeyup="firstLastName();">
             <div id="error-first-name">This field is required</div>
           </div>
 
@@ -32,7 +32,7 @@
               <div>Last Name</div>
               <div>*</div>
             </div>
-            <input type="text" class="name-text-box" id="last-name-text-box">
+            <input type="text" class="name-text-box" id="last-name-text-box" onkeyup="firstLastName();">
             <div id="error-last-name">This field is required</div>
           </div>
 
@@ -41,7 +41,7 @@
               <div>Email Address</div>
               <div>*</div>
             </div>
-            <input type="email" class="email-text-box" id="email-text-box" inputmode="email">
+            <input type="email" class="email-text-box" id="email-text-box" inputmode="email" onkeyup="emailMsg();">
             <div id="error-email">This field is required</div>
           </div>
 
@@ -74,13 +74,13 @@
               <div>Message</div>
               <div>*</div>
             </div>
-            <textarea type="text" class="msg-text-box" id="msg-text-box" rows="3"></textarea>
+            <textarea type="text" class="msg-text-box" id="msg-text-box" rows="3" onkeyup="emailMsg();"></textarea>
             <div id="error-msg">This field is required</div>
           </div>
 
           <label for="conset-checkbox" class="conset-information-with-error"> <!-- conset btn -->
             <div class="conset-information">
-              <input type="checkbox" id="conset-checkbox">
+              <input type="checkbox" id="conset-checkbox" onclick="conset()";>
             <div>I consent to being contacted by the team</div>
             </div>
             <div id="error-conset">To submit this form, please consent to being contacted</div>
