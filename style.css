@@ -1,0 +1,463 @@
+@font-face {
+    font-family: karla;
+    src: url(fonts/Karla-Regular.ttf);
+}
+
+body{
+    margin: 0;
+    font-family: karla;
+    background-color: #e0f1e7;
+}
+
+.con{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+.con-style{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 600px;
+    height: 80vh;
+    padding: 5vh;
+    background-color: white;
+    border-radius: 15px;
+    z-index: 98;
+}
+
+.head-text{
+    color: #2b3e41;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.information-inputs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    margin-top: 30px;
+}
+
+.input-name, .input-email, .query-type, .input-msg{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.name, .email, .query, .msg, .conset-information{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.name div:first-child, .email div:first-child, .query div:first-child, .msg div:first-child{
+    font-weight: 550;
+    color: #444;
+    font-size: 15px;
+}
+
+.name div:last-child, .email div:last-child, .query div:last-child, .msg div:last-child{
+    color: #2b3e41;
+}
+
+.name-text-box{
+    font-size: 16px;
+    color: #666;
+    font-weight: 500;
+    width: 260px;
+    padding-left: 20px;
+    height: 35px;
+    border: 1px solid #666;
+    border-radius: 10px;
+    outline-color: #0c7d69;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.name-text-box:hover{
+    border: 1px solid #0c7d69;
+}
+
+.email-text-box{
+    font-size: 16px;
+    color: #666;
+    font-weight: 500;
+    width: 575px;
+    padding-left: 20px;
+    height: 35px;
+    border: 1px solid #666;
+    border-radius: 10px;
+    outline-color: #0c7d69;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.email-text-box:hover{
+    border: 1px solid #0c7d69;
+}
+
+.msg-text-box{
+    font-size: 16px;
+    color: #666;
+    font-weight: 500;
+    width: 555px;
+    resize: none;
+    padding: 10px 20px 10px 20px;
+    height: 60px;
+    border: 1px solid #666;
+    border-radius: 10px;
+    outline-color: #0c7d69;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.msg-text-box:hover{
+    border: 1px solid #0c7d69;
+}
+
+.query-type{
+    gap: 15px;
+}
+
+.query-selctor{
+    display: flex;
+    gap: 36px;
+}
+
+.General-Enquiry, .Support-Request{
+    display: flex;
+    align-items: center;
+    width: 240px;
+    padding: 0 20px;
+    height: 40px;
+    border: 1px solid #666;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.General-Enquiry div, .Support-Request div{
+    font-size: 16px;
+    color: gray;
+    font-weight: 550;
+}
+
+#General, #Support{
+    margin-right: 15px;
+    width: 15px;
+    height: 15px;
+    accent-color: #0c7d69;
+    transition: all .5s;
+}
+
+.conset-information-with-error{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.conset-information div{
+    cursor: pointer;
+    font-size: 14px;
+    color: #444;
+}
+
+#conset-checkbox{
+    margin-right: 12px;
+    width: 15px;
+    height: 15px;
+    accent-color: #444;
+    border-radius: 0px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+#conset-checkbox:checked{
+    accent-color: #0c7d69;
+}
+
+.submit-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 45px;
+    background-color: #0c7d69;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.submit-btn:hover{
+    background-color: #063f36;
+}
+
+#error-first-name, #error-last-name, #error-email, #error-query, #error-msg, #error-conset{
+    font-size: 14px;
+    color: #c76f7d;
+    transition: all .5s;
+    margin-bottom: -22px;
+    opacity: 0;
+}
+
+.message-sent{
+    display: flex;
+    justify-content: center;
+}
+
+.message-sent-style{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    position: fixed;
+    top: 2vh;
+    z-index: 99;
+    width: 400px;
+    height: 80px;
+    padding: 10px 10px 10px 20px;
+    background-color: #2a4244;
+    color: white;
+    border-radius: 10px;
+    transform: translateY(-120px);
+    transition: all .5s;
+}
+
+.message-with-pic{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.thanks-msg{
+    font-size: 14px;
+    color: #98acab;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:800px) {
+    
+.con{
+    margin-top: 0vh;
+}
+
+.con-style{
+    width: 100%;
+    height: 90vh;
+    padding: 5vh;
+    border-radius: 0px;
+    border: 0vh solid black;
+}
+
+.information-inputs{
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.input-name, .input-email, .query-type, .input-msg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-top: 10px;
+}
+
+.name-text-box{
+    font-size: 16px;
+    color: #666;
+    font-weight: 500;
+    width: 100%;
+    padding-left: 20px;
+    height: 35px;
+    border: 1px solid #666;
+    border-radius: 10px;
+    outline-color: #0c7d69;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.email-text-box{
+    font-size: 16px;
+    color: #666;
+    font-weight: 500;
+    width: 100%;
+    padding-left: 20px;
+    height: 35px;
+    border: 1px solid #666;
+    border-radius: 10px;
+    outline-color: #0c7d69;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.msg-text-box{
+    font-size: 16px;
+    color: #666;
+    font-weight: 500;
+    width: 100%;
+    padding: 10px 20px 10px 20px;
+    height: 60px;
+    border: 1px solid #666;
+    border-radius: 10px;
+    outline-color: #0c7d69;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.msg-text-box:hover{
+    border: 1px solid #0c7d69;
+}
+
+.query-type{
+    gap: 10px;
+}
+
+.query-selctor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    gap: 10px;
+}
+
+.General-Enquiry, .Support-Request{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+    height: 40px;
+    border: 1px solid #666;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.General-Enquiry div, .Support-Request div{
+    font-size: 16px;
+    color: gray;
+    font-weight: 550;
+}
+
+#General, #Support{
+    margin-right: 15px;
+    width: 15px;
+    height: 15px;
+    accent-color: #0c7d69;
+    transition: all .5s;
+}
+
+.conset-information-with-error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.conset-information div{
+    cursor: pointer;
+    font-size: 14px;
+    color: #444;
+}
+
+#conset-checkbox{
+    margin-right: 12px;
+    width: 15px;
+    height: 15px;
+    accent-color: #444;
+    border-radius: 0px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+#conset-checkbox:checked{
+    accent-color: #0c7d69;
+}
+
+.submit-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    background-color: #0c7d69;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.submit-btn:hover{
+    background-color: #063f36;
+}
+
+#error-first-name, #error-last-name, #error-email, #error-query, #error-msg, #error-conset{
+    text-align: center;
+    font-size: 14px;
+    color: #c76f7d;
+    transition: all .5s;
+    margin-bottom: -15px;
+    opacity: 0;
+}
+
+.message-sent{
+    display: flex;
+    justify-content: center;
+}
+
+.message-sent-style{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    position: fixed;
+    top: 2vh;
+    z-index: 99;
+    width: 80%;
+    height: 80px;
+    padding: 10px 10px 10px 20px;
+    background-color: #2a4244;
+    color: white;
+    border-radius: 10px;
+    transform: translateY(-150px);
+    transition: all .5s;
+}
+
+.message-with-pic{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.thanks-msg{
+    font-size: 14px;
+    color: #98acab;
+}
+
+}

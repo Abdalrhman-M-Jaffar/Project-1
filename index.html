@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact form</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/favicon-32x32.png">
+</head>
+<body>
+  
+  <div class="con">
+
+    <div class="con-style">
+
+      <div class="head-text">Contact Us</div> <!-- head text -->
+
+        <!-- information inputs -->
+        <div class="information-inputs"> 
+
+          <div class="input-name"> <!-- First name -->
+            <div class="name">
+              <div>First Name</div>
+              <div>*</div>
+            </div>
+            <input type="text" class="name-text-box" id="first-name-text-box">
+            <div id="error-first-name">This field is required</div>
+          </div>
+
+          <div class="input-name"> <!-- Last name -->
+            <div class="name">
+              <div>Last Name</div>
+              <div>*</div>
+            </div>
+            <input type="text" class="name-text-box" id="last-name-text-box">
+            <div id="error-last-name">This field is required</div>
+          </div>
+
+          <div class="input-email"> <!-- Email -->
+            <div class="email">
+              <div>Email Address</div>
+              <div>*</div>
+            </div>
+            <input type="email" class="email-text-box" id="email-text-box" inputmode="email">
+            <div id="error-email">This field is required</div>
+          </div>
+
+          <div class="query-type"> <!-- Radio check -->
+            <div class="query">
+              <div>Query Type</div>
+              <div>*</div>
+            </div>
+
+            <div class="query-selctor">
+
+              <label for="General" class="General-Enquiry" id="General-Enquiry">
+                <input type="radio" name="query" id="General" onclick="styleCheck1();">
+                <div>General Enquiry</div>
+              </label>
+    
+              <label for="Support" class="Support-Request" id="Support-Request">
+                <input type="radio" name="query" id="Support" onclick="styleCheck2();">
+                <div>Support Request</div>
+              </label>
+
+            </div>
+
+            <div id="error-query">Please select a query type</div>
+
+          </div>
+
+          <div class="input-msg"> <!-- Message -->
+            <div class="msg">
+              <div>Message</div>
+              <div>*</div>
+            </div>
+            <textarea type="text" class="msg-text-box" id="msg-text-box" rows="3"></textarea>
+            <div id="error-msg">This field is required</div>
+          </div>
+
+          <label for="conset-checkbox" class="conset-information-with-error"> <!-- conset btn -->
+            <div class="conset-information">
+              <input type="checkbox" id="conset-checkbox">
+            <div>I consent to being contacted by the team</div>
+            </div>
+            <div id="error-conset">To submit this form, please consent to being contacted</div>
+          </label>
+
+          <button class="submit-btn" id="submit-btn" onclick="submit();">Submit</button> <!-- Submit btn -->
+
+        </div>
+
+      </div>
+
+  </div>
+
+  <div class="message-sent">
+
+    <div class="message-sent-style" id="message-sent-style">
+
+      <div class="message-with-pic">
+        <img src="images/icon-success-check.svg" class="icon-success">
+        <div>Message Sent!</div>
+      </div>
+
+      <div class="thanks-msg">Thanks for completing the form. We'll be in touch soon!</div>
+
+    </div>
+
+  </div>
+
+  <script src="control.js"></script>
+
+</body>
+</html>
